@@ -17,4 +17,4 @@ Trata de uma atividade realizada para conclusão do módulo de HTML, CSS e Boots
 >> Em breve!
 
 
-[Clique aqui para acessar a aplicação]()
+[Clique aqui para acessar a aplicação](https://giovanesouza.github.io/moda-brasil/)
