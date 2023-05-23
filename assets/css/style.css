@@ -1,5 +1,6 @@
 * {
     --color-dark: #212529;
+    --color-white: #fff;
     --color-warning: #FFC107;
     --color-orange: #F48D02;
     --color-primary: #689EEE;
@@ -99,9 +100,29 @@ header .icons-header a:hover {
 }
 
 
+/* Ajustes no input para inserção do CEP */
+.navbar form input {
+    font-size: 1.2rem !important;
+    padding: 0 2rem !important;
+    outline: none !important;
+    color: var(--color-dark) !important;
+}
+
+.navbar form input:focus {
+    box-shadow: 0 0 0.5rem var(--color-warning) !important;
+    font-weight: bold !important;
+}
+
+
+/* tamanho dos itens (menu dropdown) */
+.dropdown-menu .dropdown-item {
+    font-size: 1.4rem;
+} 
+
+
 .carousel-caption h3 {
     font-size: 2.4rem;
-    color: #fff;
+    color: var(--color-white);
     font-weight: bold;
     text-shadow: 0 0 1rem var(--color-orange), 0 0 1rem var(--color-dark), 0 0 1rem var(--color-orange);
 
@@ -118,9 +139,20 @@ header .icons-header a:hover {
     background-color: var(--color-dark) !important;
     border-radius: 50%;
     padding: 1.6rem;
-
 }
 
+
+/* Info de entrega e parcelamento */
+#buy-delivery .buy-info .material-symbols-outlined {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+#buy-delivery .buy-info span {
+    font-size: 1.8rem !important;
+}
 
 
 
