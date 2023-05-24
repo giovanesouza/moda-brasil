@@ -6,17 +6,38 @@
     --color-primary: #689EEE;
 }
 
+/* FORMATAÇÃO BARRA SCROLL */
+
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-warning);
+  }
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
 /* Estilizações globais */
 a {
     text-decoration: none;
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+}
+
+.brand {
+    color: var(--color-orange);
 }
 
 /* Header */
@@ -28,7 +49,7 @@ header h1 {
 header form input {
     font-size: 1.2rem !important;
     padding: 0 2rem !important;
-    width: 40rem !important;
+    /* max-width: 40rem !important; */
     outline: none !important;
     color: var(--color-dark) !important;
 }
@@ -117,7 +138,7 @@ header .icons-header a:hover {
 /* tamanho dos itens (menu dropdown) */
 .dropdown-menu .dropdown-item {
     font-size: 1.4rem;
-} 
+}
 
 
 .carousel-caption h3 {
@@ -156,6 +177,40 @@ header .icons-header a:hover {
 
 
 
+/* Seção QUEM SOMOS */
+#company img {
+    max-width: 50%;
+}
+
+#company p {
+    text-align: justify;
+}
+
+
+
+/* Seção Nosso time */
+#our-team {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+h2.team {
+    color: var(--color-white);
+}
+
+
+#our-team .card-title {
+    color: var(--color-orange);
+    font-size: 1.8rem;
+    margin: 0 !important;
+    margin-top: 1.6rem !important;
+}
+
+#our-team .card-text {
+    font-size: 1.4rem;
+}
+
+
 
 /* Responsividade */
 @media (max-width: 991px) {
@@ -173,6 +228,14 @@ header .icons-header a:hover {
 
     #navigation .navbar-nav a.nav-link {
         width: 100vw;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 58%;
     }
 
 }
