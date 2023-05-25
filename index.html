@@ -56,7 +56,8 @@
         </span>
         Lista de desejos</a>
 
-      <a href="#" class="d-flex align-items-center gap-2 text-light">
+      <a href="#" class="d-flex align-items-center gap-2 text-light" data-bs-toggle="modal"
+      data-bs-target="#loginModal">
         <span class="material-symbols-outlined">
           person
         </span>
@@ -113,6 +114,28 @@
                 <li><a class="dropdown-item" href="#man">Masculino</a></li>
                 <!-- <li><hr class="dropdown-divider">Faz uma linha (sem o texto)</li> -->
                 <li><a class="dropdown-item" href="#kid">Infantil</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                  Entre ou Cadastre-se
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal"
+                  data-bs-target="#loginModal">
+                  
+                  <span class="material-symbols-outlined">
+                    person
+                  </span>
+                  
+                  Entrar</a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-bs-toggle="modal"
+                  data-bs-target="#registerModal">
+                  <span class="material-symbols-outlined">
+                    how_to_reg
+                  </span>
+                  Cadastrar</a></li>
               </ul>
             </li>
           </ul>
@@ -865,6 +888,84 @@
   </a>
 
 
+  <!-- Modal para realizar Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+          <h1 class="modal-title fs-3" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close text-bg-warning" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-content-center text-success">
+         
+          <form action="#" method="">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fs-3">E-mail</label>
+              <input type="email" class="form-control fs-4" id="exampleInputEmail1" />
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label fs-3">Senha</label>
+              <input type="password" class="form-control fs-4" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input fs-4" id="exampleCheck1"/>
+              <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary fs-4">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal para realizar cadastro -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-bg-success">
+          <h1 class="modal-title fs-3" id="exampleModalLabel">Cadastre-se</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-content-center text-dark">
+         
+          <form action="#" method="">
+            <div class="mb-3">
+              <label for="nomeCompleto" class="form-label fs-3">Nome completo</label>
+              <input type="text" class="form-control fs-4" id="nomeCompleto" />
+            </div>
+
+            <div class="mb-3">
+              <label for="cpf" class="form-label fs-3">CPF</label>
+              <input type="text" class="form-control fs-4" id="cpf" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fs-3">E-mail</label>
+              <input type="email" class="form-control fs-4" id="email" />
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword" class="form-label fs-3">Senha</label>
+              <input type="password" class="form-control fs-4" id="exampleInputPassword">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword2" class="form-label fs-3">Repita a senha</label>
+              <input type="password" class="form-control fs-4" id="exampleInputPassword2">
+            </div>
+
+            <button type="submit" class="btn btn-success fs-4">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Modal com msg informando que o item foi adicionado à sacola -->
   <div class="modal fade" id="bagModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -893,6 +994,7 @@
 
   <script>
     $('.cep').mask('00000-000');
+    $('#cpf').mask('000.000.000-00', {reverse: true});
   </script>
 
   <!-- Bootstrap JS -->
