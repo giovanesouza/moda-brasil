@@ -22,7 +22,7 @@
 <body>
 
   <!-- Header -->
-  <header class="container-fluid bg-dark d-flex align-items-center justify-content-around p-3" id="home">
+  <header class="container-fluid bg-dark d-flex align-items-center justify-content-around p-4" id="home">
 
     <div class="logo">
       <a href="#" class="d-flex align-items-center gap-3">
@@ -50,7 +50,7 @@
 
     <div class="icons-header d-flex gap-5">
 
-      <a href="#" class="d-flex align-items-center gap-2 text-light">
+      <a href="#" class="d-flex align-items-center gap-2 text-light" onclick="alert('Para consultar os itens da sua lista, realize o login.')">
         <span class="material-symbols-outlined">
           favorite
         </span>
@@ -892,11 +892,11 @@
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header text-bg-dark">
+        <div class="modal-header bg-dark text-warning">
           <h1 class="modal-title fs-3" id="exampleModalLabel">Login</h1>
           <button type="button" class="btn-close text-bg-warning" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body d-flex align-content-center text-success">
+        <div class="modal-body d-flex align-content-center text-dark">
          
           <form action="#" method="">
             <div class="mb-3">
@@ -914,7 +914,7 @@
               <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
             </div>
 
-            <button type="submit" class="btn btn-primary fs-4">Entrar</button>
+            <button type="submit" class="btn btn-dark fs-4">Entrar</button>
           </form>
         </div>
       </div>
@@ -979,7 +979,9 @@
           O item selecionado foi adicionado à sua sacola.
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary fs-5" data-bs-dismiss="modal">Finalizar compra</button>
+          <!-- <button type="button" class="btn btn-secondary fs-5" data-bs-dismiss="modal">Finalizar compra</button> -->
+          <button type="button" class="btn btn-secondary fs-5" data-bs-toggle="modal"
+          data-bs-target="#loginModal" onclick="alert('Para finalizar a sua compra, realize o login.')">Finalizar compra</button>
           <button type="button" class="btn btn-success fs-5" data-bs-dismiss="modal" aria-label="Close">Adicionar mais
             itens</button>
         </div>
