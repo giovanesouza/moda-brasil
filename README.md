@@ -11,10 +11,10 @@ Trata de uma atividade realizada para conclusão do módulo de HTML, CSS e Boots
 ## Resultados obtidos
 
 ### Layout Web
->> Em breve!
+![Layout web](assets/images/screenshots/desktop.png)
 
 ### Layout Mobile
->> Em breve!
+![Layout web](assets/images/screenshots/mobile.png)
 
 
 [Clique aqui para acessar a aplicação](https://giovanesouza.github.io/moda-brasil/)
