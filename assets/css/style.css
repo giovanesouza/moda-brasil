@@ -4,6 +4,7 @@
     --color-warning: #FFC107;
     --color-orange: #F48D02;
     --color-primary: #689EEE;
+    --color-danger: #dc3545;
 }
 
 /* FORMATAÇÃO BARRA SCROLL */
@@ -211,8 +212,44 @@ h2.team {
 }
 
 
+/* Seção nossos produtos */
+
+/* #our-products .card {
+    border: 0.2rem solid var(--color-danger);
+} */
+
+
+/* Icon para favoritar produto */
+.favorite {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.favorite:hover {
+    color: var(--color-danger);
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+}
+
+#our-products .price-before {
+text-decoration: line-through;
+color: var(--color-danger);
+}
+
+
 
 /* Responsividade */
+@media (max-width: 1099px) {
+    #our-products .row {
+        justify-content: center !important;
+    }
+}
+
 @media (max-width: 991px) {
 
     header {
